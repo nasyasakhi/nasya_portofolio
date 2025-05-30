@@ -1,15 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nasya's Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    
 
-    
-<link rel="stylesheet" href="assets/js/script.js">
+<body>
+
+    <!-- Navbar Section -->
+    <header class="header">
+        <img src="assets/images/profile/profile.png" class="logo" alt="logo">
+
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+
+        <div class="theme_toggle">
+            <p>Light</p>
+            <i class='bx bx-sun'></i>
+        </div>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Thinking About You ~ -->
+    <section id="about" class="about_me">
+        <div class="introduce">
+            <p class="status">Available for new projects!</p>
+            <h1 class="about"><span>Nasya Dzakiyah.</span> A Junior Software Engineer and Public Speaking enthusiast
+            </h1>
+            <p class="desc">It's me Nasya, based in Jakarta, Indonesia. Beyond coding for web and mobile development, I
+                love sharing knowledge about design and coding at <span>Unjuk</span> & Self Development.</p>
+            <div class="buttons">
+                <button class="btn">See My Projects<i class='bx bx-down-arrow-alt'></i></button>
+                <button class="btn">Read Resume</button>
+            </div>
+        </div>
+
+        <div class="about_image">
+            <img src="assets/images/profile/about_me.png" alt="Nasya's Image" class="profile_img">
+            <div class="animated_box">
+                <img src="assets/images/profile/about_star.png" alt="star" class="star">
+                <div class="my_cv" onclick="animateCV()">Check My CV!</div>
+            </div>
+        </div>
+        <img src="assets/images/profile/gelombang.png" alt="gelombang" class="wave-decoration">
+    </section>
+    <!-- Thinking About You Ending ~ -->
+
+    <!-- Services Section -->
+<section class="my_services">
+
+    <div class="title_services">
+        <div class="title_text">
+            <p class="sub_title">- Services</p>
+            <h1 class="main_title"><span>My</span> Services</h1>
+        </div>
+        <button class="btn_toggle">
+            <div class="toggle_content">
+                <span class="toggle_icon">➜</span>
+                <span class="toggle_text">Explore Nasya's Portfolio</span>
+            </div>
+        </button>
+    </div>
+
+    <!-- Services Cards -->
+    <div class="services-container">
+        <div class="service-box" style="--box-color: var(--green-color)">
+            <img src="assets/images/services/user_experience.png" alt="Graphic Design Icon">
+            <h3>Web Development</h3>
+            <p>Help to tell your unforgettable & meaningful stories using interactive graphics and illustrations. (Aamiin)</p>
+        </div>
+
+        <div class="service-box" style="--box-color: var(--tosca-color)">
+            <img src="assets/images/services/mobile.png" alt="Mobile Development Icon">
+            <h3>Mobile Development</h3>
+            <p>Specialize in creating custom mobile applications on both Android and iOS to support your business. (Aamiin)</p>
+        </div>
+
+        <div class="service-box" style="--box-color: var(--purple-color)">
+            <img src="assets/images/services/website.png" alt="Web Fullstack Icon">
+            <h3>UI/UX Design</h3>
+            <p>Craft your website with full stack magic. Design and structure of web pages & manage databases. (Aamiin)</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- START BOOKS -->
+  <div class="book-container">
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">Book 1</div>
+        <div class="book-back">
+          <p>Deskripsi singkat buku pertama.</p>
+          <a href="https://example.com/book1" target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">Book 2</div>
+        <div class="book-back">
+          <p>Deskripsi singkat buku kedua.</p>
+          <a href="https://example.com/book2" target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book">
+      <div class="book-inner">
+        <div class="book-front">Book 3</div>
+        <div class="book-back">
+          <p>Deskripsi singkat buku ketiga.</p>
+          <a href="https://example.com/book3" target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END BOOKS -->
+
+  <!-- CARAOUSEL -->
+   <div class="book-shelf">
+    <div class="book pink" data-title="Autobiography Book" data-img="https://via.placeholder.com/600x400.png?text=Autobiography+Mockup" data-link="https://example.com/project1">Autobiograph</div>
+    <div class="book green" data-title="Finance Tracker" data-img="https://via.placeholder.com/600x400.png?text=Finance+App" data-link="https://example.com/project2">Finance App</div>
+    <div class="book purple" data-title="AR App" data-img="https://via.placeholder.com/600x400.png?text=AR+Project" data-link="https://example.com/project3">AR Project</div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="book-content" id="bookContent">
+    <span class="close-btn" onclick="closeBook()">×</span>
+    <img id="bookImg" src="" alt="Project Image"/>
+    <div class="details">
+      <h2 id="bookTitle">Project Title</h2>
+      <a id="bookLink" href="#" target="_blank">View Project</a>
+    </div>
+  </div>
+
+
+    <script src="assets/js/script.js" defer></script>
 </body>
+
 </html>
